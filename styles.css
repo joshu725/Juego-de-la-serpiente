@@ -1,0 +1,89 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    background-image: radial-gradient(circle, #3c3d37, #343631, #2c2e2a, #252724, #1e201e);
+    color: #ECDFCC;
+}
+
+/* Limitamos el espacio del juego */
+#board,
+.boardInfo {
+    max-width: 500px;
+}
+
+/* Creamos el tablero con 10 columnas y 10 filas */
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/* Aumentamos el tamaño de letra de la puntuación y el botón */
+#start,
+.boardInfo {
+    font-size: 25px;
+}
+
+/* Por ahora se oculta, ya que el juego no se ha terminado (después se mostrará con JS) */
+#gameOver {
+    display: none;
+}
+
+/* Separamos la información del tablero y la centramos */
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Decoramos el botón de inicio */
+#start {
+    background-color: #697565;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 3px 10px;
+    transition: all 0.4s;
+}
+
+#start:hover {
+    opacity: 75%;
+}
+
+#start:active {
+    opacity: 100%;
+}
+
+/* La puntuación se mostrará al lado de "Score:" */
+#scoreBoard {
+    display: inline-flex;
+}
+
+/* Futuros cuadrados que se van a generar con JS */
+.square {
+    aspect-ratio: 1;
+}
+
+/* Colores de cada cuadradro:*/
+
+/* Vacio */
+.emptySquare {
+    background-color: #3C3D37;
+}
+
+/* Serpiente */
+.snakeSquare {
+    background-color: #697565;
+}
+
+/* Comida */
+.foodSquare {
+    background-color: #ECDFCC;
+}
