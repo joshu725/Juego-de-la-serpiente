@@ -10,6 +10,15 @@
 body {
     background-image: radial-gradient(circle, #3c3d37, #343631, #2c2e2a, #252724, #1e201e);
     color: #ECDFCC;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    min-width: 500px;
+    min-height: 500px;
 }
 
 /* Limitamos el espacio del juego */
