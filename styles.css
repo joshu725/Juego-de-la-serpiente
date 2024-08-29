@@ -42,6 +42,10 @@ body {
 /* Por ahora se oculta, ya que el juego no se ha terminado (después se mostrará con JS) */
 #gameOver {
     display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 /* Separamos la información del tablero y la centramos */
